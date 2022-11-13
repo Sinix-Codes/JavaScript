@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #252525;
+            color : #f5f5f5
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hui huihuihuihuhui...</h1>
+    <marquee><h1>Welcome to Sinix world</h1></marquee>
+    <script>
+        alert("Ha ha hello world😏 ,Enter Name ->");
+        let A = prompt("Enter Your Name : ");
+        
+        // A = Number.parseInt(A) // Typeconversion
+        alert("You enterd value of type " + (typeof A));
+        
+        let write = confirm("Do you want to print of screen ? ");
+        if (write) {
+            document.write(A);
+        }
+        else{
+            document.write("Allow me to write");
+        }
+
+        let B = prompt("Enter your Age :")
+        const drive=(B)=>{
+            return (B>18?true:false)
+        }
+        
+        if (drive(B)) {
+            document.write("You can drive");
+        }
+        else{
+            document.write("You cannot drive");
+            // location.href = "https://www.bing.com/search?q=traffic+rules&cvid=72ba83b3377c4f4bbd8060373878080d&aqs=edge.1.69i57j69i59l3j69i60l3.2041j0j1&pglt=43&FORM=ANNTA1&PC=HCTS"
+        }
+        
+        let color = prompt("Enter your fav color : ")
+        document.body.style.background = color
+
+    </script>
+</body>
+</html>
