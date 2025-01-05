@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Window</title>
+</head>
+<body>
+    <h1>Hey There Sinix Here👋🏼</h1>
+
+    <button id="newwin" type="button">Open Window</button>
+    <button id="focuswin" type="button">Focus Window</button>
+    <button id="blurwin" type="button">Blur Window</button>
+
+    <script>
+
+        var newWin;
+
+        function openwin() {
+            newWin = window.open("https://kunal-khairnar-05.github.io/","_blank","height=400,width=500,left=200,top=200");
+        }
+
+        function focuswin() {
+            newWin.focus();
+        }
+
+        function blurwin() { 
+            newWin.blur();
+        }
+
+        document.getElementById("newwin").addEventListener("click",openwin);
+        document.getElementById("focuswin").addEventListener("click",focuswin);
+        document.getElementById("blurwin").addEventListener("click",blurwin);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+     <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="myform">
+      <div id="lables">
+        <label class="lables">Username</label>
+        <input type="text" name="name" id="name" required/>
+      </div>
+      <div id="lables">
+        <label class="lables">Password</label>
+        <input type="password" name="password"  required id="pass" />
+      </div>
+      <button type="submit" name="submitbnt" id="lables">Submit</button>
+    </form>
+
+    <script>
+        let name = document.getElementById('name').value
+        let pass = document.getElementById('pass').value
+        let myform = document.getElementById
+        ('myform')
+        const errorElement = document.getElementById('Error')
+        myform.addEventListener('submit',(e)=>{
+            let msg = []
+            if(name.value === '' || name.value==null){
+                msg.push('Name is required!')
+            }
+            if(pass.value.length <= 6){
+                msg.push("Password must be longer than 6 characters!")
+            }
+            if(msg.length > 0){
+                e.preventDefault();
+                errorElement.innerText = msg.join(' ')
+            }
+        })
+    </script>
+  </body>
+</html>

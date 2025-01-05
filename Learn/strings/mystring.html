@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // joining strings
+        let str1 = "Hey";
+        let str2 = "I'm Kunal"
+        let result = str1+" "+str2;
+        console.log(result );
+
+        console.log(str1.concat(" ",str2));
+
+        //dividing the text
+        let text = "Hello I am Sinix"
+        let result1 = text.split(" ");
+        console.log(result1)
+
+        //num to string
+        let num = 42;
+        console.log(num);
+        console.log(typeof num);
+        let str = num.toString();
+        console.log(str);
+        console.log(typeof str);
+
+        //string to int
+        let str3 = "42";
+        let num1 = parseInt(str)
+        console.log(typeof num1)
+
+        //Changing case
+        let upper = result.toUpperCase();
+        console.log(upper);
+
+        let lower = upper.toLowerCase();
+        console.log(lower);
+
+
+        //getting the Unicode
+
+        let mychar = "ABCD"
+        let mycode = mychar.charCodeAt(3);
+        console.log(mycode)
+
+        //getting character from unicode
+        let code = 70;
+        let char = String.fromCharCode(code);
+        console.log(char);
+    </script>
+</body>
+</html>

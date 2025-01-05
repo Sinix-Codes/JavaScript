@@ -12,19 +12,20 @@
     <script>
         alert("Helloooooo");
 
-        // let b = setTimeout(function(){
-        //     alert("Im inside setTimeout")
-        // },2000)
+        let b = setTimeout(function(){
+            alert("Im inside setTimeout")
+        },2000)
 
-        // let a = prompt("Do you want to run setTimeout?")
+        let a = prompt("Do you want to run setTimeout?")
 
-        // if (a == "n") {
-        //     clearTimeout(b)
-        // }
-        // else{
+        if (a == "n") {
+            clearTimeout(b)
+        }
+        else{
            
-        // }
-        // console.log(b)
+        }
+        
+        console.log(b)
 
         const sum = (a,b) =>{
             console.log("Yes im running" + (a+b))
@@ -33,9 +34,9 @@
 
         setTimeout(sum,1000,1,2)
 
-        // setInterval(function(){
-        //     alert("This is setInterval");
-        // },3000)
+        setInterval(function(){
+            alert("This is setInterval");
+        },4000)
 
     </script>
 </body>

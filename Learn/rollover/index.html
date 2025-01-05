@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rollover</title>
+</head>
+<body>
+    <h1>Rollover Image</h1>
+
+    <img id="img" src="img1.jpg" alt="" style="width : 400px; height: 400px;">
+    
+    <script>
+        document.getElementById("img").addEventListener("mouseover", changeImgae);
+        document.getElementById("img").addEventListener("mouseleave", changeAgain);
+
+        function changeImgae(){
+            var Image = document.getElementById("img").src="img2.jpeg";
+        }
+
+        function changeAgain(){
+            var Image = document.getElementById("img").src="img1.jpg";
+        }
+    </script>
+</body>
+</html>

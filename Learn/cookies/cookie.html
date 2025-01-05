@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie</title>
+</head>
+<body>
+    <h1>Hey there sinix here</h1>
+    <script>
+        // console.log(document.cookie)
+        // document.cookie = "name = Kunal; age = 13"
+        
+        // let mykey = prompt("Enter your key")
+        // let myval = prompt("Enter your value")
+        
+        // document.cookie = `${mykey} = ${myval}`
+        // console.log(document.cookie)
+
+        //expire a cookie
+
+        // document.cookie = "firstname = sinix; expires=Mon, 3 July 2022 18:45:00 UTC; path=/"
+        // console.log(document.cookie)
+
+
+        setCookie("email","sinix@123",365)
+        setCookie("emailId","maverick",365)
+
+        function setCookie(name , value , daysToLive){
+            const date = new Date();
+            date.setTime(date.getTime()+ daysToLive * 24 * 60 * 60 * 1000);
+            let expires = "expires="+date.toUTCString();
+            document.cookie = `${name}=${value}; ${expires}; path=/`
+        }
+
+        function deleteCookie(name) {
+            setCookie(name,null,null);
+        }
+
+        deleteCookie("ram");
+
+        console.log(document.cookie);
+    </script>
+</body>
+</html>

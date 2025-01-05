@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+    <script>
+        var arr = [1,8,3,9,4,2,6,5,7]
+        
+        // looping array
+        arr.forEach(function(ele){
+            console.log(ele);
+        })
+
+        //length of array
+        console.log(arr.length)
+        
+        // push
+        arr.push(10)
+        console.log(arr)
+        
+        //pop
+        arr.pop()
+        console.log(arr)
+        
+        //insert from begin
+        arr.unshift("hello")
+        console.log(arr)
+        
+        //pop from begin
+        arr.shift()
+        console.log(arr)
+
+        //sorting array
+        console.log(arr.sort())
+        
+        const cars = ["Saab", "Volvo", "BMW"];
+        let size = cars.length;
+        document.write(size);
+        
+        document.write(cars);
+        cars.push("Audi")
+        document.write(cars);
+        cars.pop()
+        cars.pop()
+
+        //combining array elements into strings
+        let result = arr.join("");
+        document.write(result)
+
+    </script>
+</body>
+</html>
